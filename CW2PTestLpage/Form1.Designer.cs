@@ -237,6 +237,7 @@ namespace CW2PTestLpage
             this.guna2GradientButton2.Size = new System.Drawing.Size(274, 28);
             this.guna2GradientButton2.TabIndex = 7;
             this.guna2GradientButton2.Text = "Register";
+            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
             // 
             // guna2Separator1
             // 

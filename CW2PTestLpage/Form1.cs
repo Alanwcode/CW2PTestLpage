@@ -74,5 +74,12 @@ namespace CW2PTestLpage
         {
             System.Diagnostics.Process.Start("https://www.instagram.com/glamour_richlk/");
         }
+
+        private void guna2GradientButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            registration reg = new registration();
+            reg.Show();
+        }
     }
 }

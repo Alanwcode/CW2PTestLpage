@@ -36,7 +36,9 @@ namespace CW2PTestLpage
         {
             try
             {
+                //SqlConnection con = new SqlConnection("CONNECCTION STRING");
                 SqlConnection con = new SqlConnection("Data Source=DESKTOP-9PI6981;Initial Catalog=CW2PTestLForm;Integrated Security=True");
+                //database containt table lDetails and table containt username primary key data type varchar and passUser data type varchar
                 SqlDataAdapter da = new SqlDataAdapter("select count(*) from lDetails where username = '" + txt_username.Text + "' and passUser = '" + txt_password.Text + "'", con);
                 DataTable dt = new DataTable();
                 da.Fill(dt);
@@ -53,7 +55,7 @@ namespace CW2PTestLpage
             }
             catch(Exception)
             {
-
+                MessageBox.Show("Something is wrong, please try again", "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             
         }
